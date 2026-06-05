@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E.E.S.T E.G Oliver Wifi Publico</title>
+
+    <script>
+    function enviarNotificacion() {
+        document.getElementById('miH2').textContent = "Caiste jajajajajajajaja";
+        document.getElementById('miAudio').play()
+    }
+</script>
+
+    <link rel="icon" type="image/png" href="Icon.png">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 90vh;
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+        }
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20%;
+            width: 99%;
+            font-size: 100%;
+            background-color: #000000;
+            color: #f0f4f8;
+            padding: 10% 21%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            cursor: pointer;
+            text-align: center;
+        }
+
+        img {
+            width: 50px; /* Ancho fijo */
+            height: auto; /* El alto se ajusta proporcionalmente */
+        }
+
+        audio {
+            display: none;
+        }
+
+        header {
+            position: fixed;
+            justify-content: center;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #33333300;
+            color: white;
+            padding: 10px;
+            z-index: 1000;
+        }
+        
+        .contenedor {
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--<header>
+        <img src="LogoXL.png" alt="Escuela Industrial Logo">
+    </header>-->
+    <div class="contenedor">
+        <h2 id="miH2">Wifi Publico Industial</h2>
+        <!-- Etiqueta de audio con controles nativos -->
+        <audio id="miAudio" controls>
+            <source src="Audio.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+
+        <br><br>
+        <!-- Botón para reproducir con JavaScript -->
+        <button onclick="enviarNotificacion()">Conectarse al Wifi</button>
+    </div>
+</body>
+</html>
